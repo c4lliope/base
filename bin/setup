@@ -24,12 +24,15 @@ if [ ! -f docker-compose.yml ]; then
   cp docker-compose.dev.yml docker-compose.yml
 fi
 
+# Set up our database
+./bin/docker-compose run --rm web rake db:create db:migrate db:seed
+
 # Install Node dependencies
 ./bin/docker-compose run --rm webpack yarn install
 
 # For SSL
-mkdir key certificates challenge
-openssl genrsa 4096 > key/keyfile.pem
+# mkdir key certificates challenge
+# openssl genrsa 4096 > key/keyfile.pem
 
 # Only if this isn't CI
 # if [ -z "$CI" ]; then

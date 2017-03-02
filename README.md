@@ -31,6 +31,7 @@ alias dc='docker-compose'
 alias dcrun='dc run --rm'
 alias drun='docker run --rm -it'
 alias dvrun='drun -v $(pwd):/app --workdir /app $argv
+alias b='dcrun web bundle lock && dc build'
 ```
 
 ## Guidelines
