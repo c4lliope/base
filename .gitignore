@@ -1,0 +1,29 @@
+!.keep
+*.DS_Store
+*.swo
+*.swp
+/.bundle
+/.env.local
+/coverage/*
+/db/*.sqlite3
+/log/*
+/public/system
+/public/assets
+/tags
+/tmp/*
+/node_modules
+
+# Environment-specific files (prod, dev, etc.)
+# These files have samples committed in the repository for each environment.
+.env
+bin/serve
+
+# for production SSL certificates
+/certificates
+/challenge
+/key
+
+# Added by webpack-rails
+/public/webpack
+
+docker-compose.yml

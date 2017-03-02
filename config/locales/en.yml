@@ -1,0 +1,23 @@
+en:
+  date:
+    formats:
+      default:
+        "%B %d, %Y"
+      with_weekday:
+        "%a %m/%d/%y"
+
+  sessions:
+    create:
+      success: "Welcome, %{name}!"
+
+  time:
+    formats:
+      default:
+        "%a, %b %-d, %Y at %r"
+      date:
+        "%b %-d, %Y"
+      short:
+        "%B %d"
+
+  titles:
+    application: $APPNAME
